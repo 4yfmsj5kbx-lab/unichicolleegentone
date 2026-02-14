@@ -1,3 +1,6 @@
+<!-- 遮罩層 -->
+<div class="overlay" id="overlay" onclick="closeCart()"></div>
+
 <header>
     <div class="header-content">
         <div class="logo">
@@ -55,7 +58,7 @@
             <div class="price-section">
                 <div class="price-label">人民幣價格 (包郵包稅):</div>
                 <div class="price">¥160.00 <span>¥258.00</span></div>
-                <span class="currency-toggle" onclick="toggleCurrency()">切換台幣價格</span>
+                <button class="currency-toggle" onclick="toggleCurrency()">切換台幣價格</button>
                 
                 <div class="price-twd" id="price-twd">
                     <div class="price-label">台幣價格 (包郵包稅):</div>
@@ -82,17 +85,17 @@
                 </div>
             </div>
             
-            <!-- 更新後的產品描述 -->
+            <!-- 產品描述 -->
             <div class="product-description">
                 <h3>產品介紹</h3>
-                <p>UNICHI膠原蛋白小熊軟糖是澳洲爆款美容營養品，採用天然玫瑰果精華和維生素C配方[9](@ref)。每顆軟糖都像美味的小熊糖果，輕鬆補充膠原蛋白，改善皮膚彈性，減少細紋[15](@ref)。無人工色素、無防腐劑、無麩質，適合素食者。每天2顆，持續28天，見證肌膚煥新變化[9](@ref)。</p>
+                <p>UNICHI膠原蛋白小熊軟糖是澳洲爆款美容營養品，採用天然玫瑰果精華和維生素C配方[1](@ref)。每顆軟糖都像美味的小熊糖果，輕鬆補充膠原蛋白，改善皮膚彈性，減少細紋。無人工色素、無防腐劑、無麩質，適合素食者。每天2顆，持續28天，見證肌膚煥新變化。</p>
                 
                 <div class="benefit-card">
                     <h4>核心功效</h4>
-                    <p>• 每2粒含1000mg海洋膠原蛋白，補充皮膚所需營養[10](@ref)</p>
-                    <p>• 玫瑰果精華富含維生素C，促進膠原蛋白合成[16](@ref)</p>
-                    <p>• 增加皮膚彈性達15%，改善肌膚含水量[10](@ref)</p>
-                    <p>• 富含抗氧化成分，抑制自由基，提亮膚色[11](@ref)</p>
+                    <p>• 每2粒含1000mg海洋膠原蛋白，補充皮膚所需營養[1](@ref)</p>
+                    <p>• 玫瑰果精華富含維生素C，促進膠原蛋白合成[1](@ref)</p>
+                    <p>• 增加皮膚彈性達15%，改善肌膚含水量[1](@ref)</p>
+                    <p>• 富含抗氧化成分，抑制自由基，提亮膚色[1](@ref)</p>
                 </div>
                 
                 <h3>主要成分</h3>
@@ -106,51 +109,51 @@
                     <tbody>
                         <tr>
                             <td>海洋膠原蛋白</td>
-                            <td>每2粒1000mg，分子小易吸收[10](@ref)</td>
+                            <td>每2粒1000mg，分子小易吸收[1](@ref)</td>
                         </tr>
                         <tr>
                             <td>玫瑰果提取物</td>
-                            <td>天然維生素C來源，抗氧化[16](@ref)</td>
+                            <td>天然維生素C來源，抗氧化[1](@ref)</td>
                         </tr>
                         <tr>
                             <td>玫瑰花</td>
-                            <td>補充花青素，潤澤肌膚[10](@ref)</td>
+                            <td>補充花青素，潤澤肌膚[1](@ref)</td>
                         </tr>
                         <tr>
                             <td>針葉櫻桃</td>
-                            <td>富含天然維生素C，抑制90%自由基[10](@ref)</td>
+                            <td>富含天然維生素C，抑制90%自由基[1](@ref)</td>
                         </tr>
                         <tr>
                             <td>維生素C</td>
-                            <td>促進膠原蛋白合成，提亮膚色[11](@ref)</td>
+                            <td>促進膠原蛋白合成，提亮膚色[1](@ref)</td>
                         </tr>
                     </tbody>
                 </table>
                 
                 <h3>食用方法</h3>
                 <ul>
-                    <li>成人每日2顆，隨餐或餐後咀嚼食用[10](@ref)</li>
-                    <li>可直接咀嚼，口感酸甜可口，Q彈不黏牙[18](@ref)</li>
-                    <li>建議連續食用28天以上效果更佳[9](@ref)</li>
+                    <li>成人每日2顆，隨餐或餐後咀嚼食用[1](@ref)</li>
+                    <li>可直接咀嚼，口感酸甜可口，Q彈不黏牙</li>
+                    <li>建議連續食用28天以上效果更佳</li>
                     <li>存放於陰涼乾燥處，避免陽光直射</li>
                     <li>置於兒童無法觸及的地方</li>
                 </ul>
                 
                 <div class="benefit-card">
                     <h4>產品特點</h4>
-                    <p>• 0蔗糖、0脂肪、超低卡路里，美味不怕胖[10](@ref)</p>
-                    <p>• 小熊造型可愛，口感Q彈如零食[18](@ref)</p>
-                    <p>• 澳洲原裝進口，TGA及GMP認證生產[9](@ref)</p>
-                    <p>• 適合忙碌上班族，隨時隨地補充營養[15](@ref)</p>
+                    <p>• 0蔗糖、0脂肪、超低卡路里，美味不怕胖[1](@ref)</p>
+                    <p>• 小熊造型可愛，口感Q彈如零食</p>
+                    <p>• 澳洲原裝進口，TGA及GMP認證生產[2,6](@ref)</p>
+                    <p>• 適合忙碌上班族，隨時隨地補充營養</p>
                 </div>
                 
                 <h3>注意事項</h3>
                 <ul>
-                    <li>本品為膳食補充劑，不能替代藥物[11](@ref)</li>
-                    <li>孕婦、哺乳期婦女及兒童使用前請諮詢醫生[11](@ref)</li>
-                    <li>對成分過敏者請勿使用</li>
-                    <li>效果因人而異，需長期規律服用[11](@ref)</li>
-                    <li>配合健康飲食和適當護膚效果更佳[11](@ref)</li>
+                    <li>本品為膳食補充劑，不能替代藥物[7](@ref)</li>
+                    <li>孕婦、哺乳期婦女及兒童使用前請諮詢醫生[7](@ref)</li>
+                    <li>對成分過敏者請勿使用[7](@ref)</li>
+                    <li>效果因人而異，需長期規律服用[7](@ref)</li>
+                    <li>配合健康飲食和適當護膚效果更佳[7](@ref)</li>
                 </ul>
             </div>
             
@@ -190,6 +193,7 @@
     </div>
 </div>
 
+<!-- 聯繫客服模態框 -->
 <div id="contactModal" class="modal">
     <div class="modal-content">
         <div style="font-size: 60px; color: #4ecdc4; margin-bottom: 20px;">
@@ -221,6 +225,7 @@
     </div>
 </div>
 
+<!-- 通知提示 -->
 <div id="notification" class="notification"></div>
 
 <footer>
@@ -230,10 +235,10 @@
         <p style="color: #aaa; font-size: 13px; margin-top: 15px;">服務時間：週一至週五 9:00-18:00（澳洲時間）</p>
         
         <div class="social-icons">
-            <a href="#"><i class="fab fa-weixin"></i></a>
-            <a href="#"><i class="fab fa-line"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="微信"><i class="fab fa-weixin"></i></a>
+            <a href="#" title="LINE"><i class="fab fa-line"></i></a>
+            <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
         </div>
         
         <p style="color: #aaa; font-size: 12px; margin-top: 20px;">
@@ -274,61 +279,97 @@
     const notificationEl = document.getElementById('notification');
     const contactModal = document.getElementById('contactModal');
     const priceTwdEl = document.getElementById('price-twd');
+    const loadingEl = document.getElementById('loading');
     
-    // 初始化產品資訊
-    function initProduct() {
+    // 初始化頁面
+    function initPage() {
+        // 隱藏加載動畫
+        setTimeout(() => {
+            loadingEl.classList.remove('active');
+        }, 500);
+        
+        // 初始化產品資訊
         document.querySelector('.product-title').textContent = productConfig.name;
         document.querySelector('.product-subtitle').textContent = productConfig.subtitle;
         document.querySelector('.product-badge').textContent = productConfig.badge;
         document.querySelector('.product-emoji').textContent = productConfig.emoji;
-        document.querySelector('.price').innerHTML = `¥${productConfig.price_cny.toFixed(2)} <span>¥${productConfig.original_price_cny.toFixed(2)}</span>`;
-        document.querySelector('#price-twd .price').textContent = `NT$${productConfig.price_twd}`;
+        
+        // 更新價格顯示
+        updatePriceDisplay();
+        
+        // 從本地存儲加載購物車
+        loadCartFromStorage();
+        
+        // 更新購物車顯示
+        updateCartDisplay();
+        
+        console.log('頁面初始化完成');
+    }
+    
+    // 更新價格顯示
+    function updatePriceDisplay() {
+        const priceElement = document.querySelector('.price');
+        priceElement.innerHTML = `¥${productConfig.price_cny.toFixed(2)} <span>¥${productConfig.original_price_cny.toFixed(2)}</span>`;
     }
     
     // 切換貨幣顯示
     function toggleCurrency() {
         const toggleBtn = document.querySelector('.currency-toggle');
+        
         if (currentCurrency === "cny") {
             currentCurrency = "twd";
-            toggleBtn.textContent = "切換人民幣價格";
             priceTwdEl.style.display = "block";
+            toggleBtn.textContent = "切換人民幣價格";
+            toggleBtn.style.background = "#ff6b8b";
         } else {
             currentCurrency = "cny";
-            toggleBtn.textContent = "切換台幣價格";
             priceTwdEl.style.display = "none";
+            toggleBtn.textContent = "切換台幣價格";
+            toggleBtn.style.background = "#4ecdc4";
         }
-        updateCart();
     }
     
     // 修改數量
-    function changeQuantity(amount) {
-        let value = parseInt(quantityEl.value) + amount;
-        if (value < 1) value = 1;
-        quantityEl.value = value;
-        quantity = value;
+    function changeQuantity(change) {
+        quantity += change;
+        if (quantity < 1) quantity = 1;
+        if (quantity > 99) quantity = 99;
+        quantityEl.value = quantity;
     }
     
-    // 添加到購物車
+    // 加入購物車
     function addToCart() {
-        const existingItem = cart.find(item => item.id === productConfig.id);
+        const product = {
+            id: productConfig.id,
+            name: productConfig.name,
+            price: productConfig.price_cny,
+            quantity: quantity,
+            emoji: productConfig.emoji
+        };
         
-        if (existingItem) {
-            existingItem.quantity += quantity;
+        // 檢查是否已存在於購物車
+        const existingIndex = cart.findIndex(item => item.id === product.id);
+        
+        if (existingIndex > -1) {
+            // 更新數量
+            cart[existingIndex].quantity += quantity;
         } else {
-            cart.push({
-                id: productConfig.id,
-                name: productConfig.name,
-                price_cny: productConfig.price_cny,
-                price_twd: productConfig.price_twd,
-                emoji: productConfig.emoji,
-                quantity: quantity
-            });
+            // 添加新商品
+            cart.push(product);
         }
         
-        updateCart();
-        showNotification('已添加 ' + quantity + ' 瓶UNICHI小熊軟糖到購物車');
-        quantityEl.value = 1;
+        // 保存到本地存儲
+        saveCartToStorage();
+        
+        // 更新購物車顯示
+        updateCartDisplay();
+        
+        // 顯示通知
+        showNotification(`已成功添加 ${quantity} 件商品到購物車`);
+        
+        // 重置數量
         quantity = 1;
+        quantityEl.value = quantity;
     }
     
     // 立即購買
@@ -341,91 +382,87 @@
     function toggleCart() {
         cartSidebar.classList.toggle('active');
         overlay.classList.toggle('active');
+        
+        // 阻止滾動
+        if (cartSidebar.classList.contains('active')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
     }
     
     // 關閉購物車
     function closeCart() {
         cartSidebar.classList.remove('active');
         overlay.classList.remove('active');
+        document.body.style.overflow = 'auto';
     }
     
     // 更新購物車顯示
-    function updateCart() {
+    function updateCartDisplay() {
         // 更新購物車數量
         const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
         cartCountEl.textContent = totalItems;
         
-        // 渲染購物車商品
-        renderCartItems();
-        
-        // 計算總價
-        calculateCartTotal();
-    }
-    
-    // 渲染購物車商品
-    function renderCartItems() {
+        // 更新購物車內容
         if (cart.length === 0) {
             cartItemsEl.innerHTML = '<p style="text-align: center; color: #888; padding: 30px 0;">購物車為空</p>';
+            cartSubtotalEl.textContent = '¥0.00';
+            cartTotalEl.textContent = '¥0.00';
             return;
         }
         
-        let html = '';
-        cart.forEach(item => {
-            const price = currentCurrency === "cny" ? item.price_cny : item.price_twd;
-            const currencySymbol = currentCurrency === "cny" ? "¥" : "NT$";
+        let cartHTML = '';
+        let subtotal = 0;
+        
+        cart.forEach((item, index) => {
+            const itemTotal = item.price * item.quantity;
+            subtotal += itemTotal;
             
-            html += `
-            <div class="cart-item" data-id="${item.id}">
-                <div class="cart-item-img">${item.emoji}</div>
-                <div class="cart-item-info">
-                    <div class="cart-item-name">${item.name}</div>
-                    <div class="cart-item-price">${currencySymbol}${price.toFixed(2)}</div>
-                    <div class="cart-item-controls">
-                        <button class="cart-qty-btn" onclick="changeCartQuantity(${item.id}, -1)">-</button>
-                        <span class="cart-qty">${item.quantity}</span>
-                        <button class="cart-qty-btn" onclick="changeCartQuantity(${item.id}, 1)">+</button>
-                        <span class="remove-item" onclick="removeFromCart(${item.id})">移除</span>
+            cartHTML += `
+                <div class="cart-item">
+                    <div class="cart-item-img">${item.emoji}</div>
+                    <div class="cart-item-info">
+                        <div class="cart-item-name">${item.name}</div>
+                        <div class="cart-item-price">¥${item.price.toFixed(2)}</div>
+                        <div class="cart-item-controls">
+                            <button class="cart-qty-btn" onclick="updateCartItemQuantity(${index}, -1)">-</button>
+                            <span class="cart-qty">${item.quantity}</span>
+                            <button class="cart-qty-btn" onclick="updateCartItemQuantity(${index}, 1)">+</button>
+                            <span class="remove-item" onclick="removeCartItem(${index})">移除</span>
+                        </div>
                     </div>
                 </div>
-            </div>
             `;
         });
         
-        cartItemsEl.innerHTML = html;
+        cartItemsEl.innerHTML = cartHTML;
+        cartSubtotalEl.textContent = `¥${subtotal.toFixed(2)}`;
+        cartTotalEl.textContent = `¥${subtotal.toFixed(2)}`;
     }
     
-    // 修改購物車商品數量
-    function changeCartQuantity(id, amount) {
-        const item = cart.find(item => item.id === id);
-        if (item) {
-            item.quantity += amount;
-            if (item.quantity < 1) {
-                cart = cart.filter(item => item.id !== id);
-            }
-            updateCart();
-        }
-    }
-    
-    // 從購物車移除商品
-    function removeFromCart(id) {
-        cart = cart.filter(item => item.id !== id);
-        updateCart();
-        showNotification('已從購物車移除商品');
-    }
-    
-    // 計算購物車總價
-    function calculateCartTotal() {
-        let subtotal = 0;
+    // 更新購物車商品數量
+    function updateCartItemQuantity(index, change) {
+        cart[index].quantity += change;
         
-        if (currentCurrency === "cny") {
-            subtotal = cart.reduce((sum, item) => sum + (item.price_cny * item.quantity), 0);
-            cartSubtotalEl.textContent = `¥${subtotal.toFixed(2)}`;
-            cartTotalEl.textContent = `¥${subtotal.toFixed(2)}`;
-        } else {
-            subtotal = cart.reduce((sum, item) => sum + (item.price_twd * item.quantity), 0);
-            cartSubtotalEl.textContent = `NT$${subtotal.toFixed(0)}`;
-            cartTotalEl.textContent = `NT$${subtotal.toFixed(0)}`;
+        if (cart[index].quantity < 1) {
+            cart[index].quantity = 1;
         }
+        
+        if (cart[index].quantity > 99) {
+            cart[index].quantity = 99;
+        }
+        
+        saveCartToStorage();
+        updateCartDisplay();
+    }
+    
+    // 移除購物車商品
+    function removeCartItem(index) {
+        cart.splice(index, 1);
+        saveCartToStorage();
+        updateCartDisplay();
+        showNotification('商品已從購物車移除');
     }
     
     // 結算
@@ -435,8 +472,13 @@
             return;
         }
         
+        closeCart();
         contactModal.style.display = 'flex';
-        overlay.classList.add('active');
+    }
+    
+    // 關閉模態框
+    function closeModal() {
+        contactModal.style.display = 'none';
     }
     
     // 顯示通知
@@ -445,22 +487,51 @@
         notificationEl.style.display = 'block';
         
         setTimeout(() => {
-            notificationEl.style.animation = 'slideOut 0.4s ease';
-            setTimeout(() => {
-                notificationEl.style.display = 'none';
-                notificationEl.style.animation = '';
-            }, 400);
+            notificationEl.style.display = 'none';
         }, 3000);
     }
     
-    // 關閉模態窗口
-    function closeModal() {
-        contactModal.style.display = 'none';
-        overlay.classList.remove('active');
+    // 保存購物車到本地存儲
+    function saveCartToStorage() {
+        try {
+            localStorage.setItem('unichi_cart', JSON.stringify(cart));
+        } catch (e) {
+            console.error('保存購物車失敗:', e);
+        }
+    }
+    
+    // 從本地存儲加載購物車
+    function loadCartFromStorage() {
+        try {
+            const savedCart = localStorage.getItem('unichi_cart');
+            if (savedCart) {
+                cart = JSON.parse(savedCart);
+            }
+        } catch (e) {
+            console.error('加載購物車失敗:', e);
+            cart = [];
+        }
     }
     
     // 頁面加載完成後初始化
-    document.addEventListener('DOMContentLoaded', function() {
-        initProduct();
+    document.addEventListener('DOMContentLoaded', initPage);
+    
+    // 點擊遮罩層關閉購物車
+    overlay.addEventListener('click', closeCart);
+    
+    // 點擊模態框外部關閉
+    window.addEventListener('click', function(event) {
+        if (event.target === contactModal) {
+            closeModal();
+        }
+    });
+    
+    // 鍵盤事件
+    document.addEventListener('keydown', function(event) {
+        // ESC鍵關閉購物車和模態框
+        if (event.key === 'Escape') {
+            closeCart();
+            closeModal();
+        }
     });
 </script>
