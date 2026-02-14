@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UNICHI膠原蛋白小熊軟糖 - 澳洲正品代購</title>
+    <title>澳洲正品代購 - Zoey台灣人澳洲購Tone直郵</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -57,6 +57,11 @@
             border-radius: 50%;
             object-fit: cover;
             border: 2px solid white;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
         }
         
         .cart-icon-wrapper {
@@ -573,6 +578,27 @@
             font-size: 22px;
             text-decoration: none;
         }
+        
+        .product-description {
+            margin: 25px 0;
+            color: #666;
+            line-height: 1.7;
+        }
+        
+        .product-description h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        
+        .product-description ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .product-description li {
+            margin-bottom: 8px;
+        }
     </style>
 </head>
 <body>
@@ -582,8 +608,8 @@
     <header>
         <div class="header-content">
             <div class="logo">
-                <!-- 請將以下圖片鏈接替換為您的實際logo圖片 -->
-                <img src="https://via.placeholder.com/40/FF6B8B/FFFFFF?text=Z" alt="Zoey台灣人澳洲購" class="logo-img">
+                <!-- 使用簡單袋鼠圖標替代複雜logo -->
+                <div class="logo-img">🦘</div>
                 <span>Zoey台灣人澳洲購Tone直郵</span>
             </div>
             <div class="cart-icon-wrapper" onclick="toggleCart()">
@@ -627,22 +653,23 @@
     <div class="container">
         <div class="product-card">
             <div class="product-image">
-                <div class="product-emoji">🧸</div>
+                <!-- 產品圖片區域 -->
+                <div class="product-emoji" id="product-emoji">🧴</div>
             </div>
             
             <div class="product-info">
-                <div class="product-badge">澳洲正品直郵</div>
-                <h1 class="product-title">UNICHI 膠原蛋白小熊軟糖</h1>
-                <p class="product-subtitle">玫瑰果精華+維生素C，美味又美容，每瓶60粒</p>
+                <div class="product-badge" id="product-badge">澳洲正品直郵</div>
+                <h1 class="product-title" id="product-title">澳洲優質產品</h1>
+                <p class="product-subtitle" id="product-subtitle">澳洲藥房正品，品質保證</p>
                 
                 <div class="price-section">
                     <div class="price-label">人民幣價格 (包郵包稅):</div>
-                    <div class="price">¥160.00 <span>¥258.00</span></div>
+                    <div class="price" id="price-cny">¥160.00 <span id="original-price">¥258.00</span></div>
                     <span class="currency-toggle" onclick="toggleCurrency()">切換台幣價格</span>
                     
                     <div class="price-twd" id="price-twd">
                         <div class="price-label">台幣價格 (包郵包稅):</div>
-                        <div class="price">NT$710</div>
+                        <div class="price" id="price-twd-value">NT$710</div>
                     </div>
                 </div>
                 
@@ -661,13 +688,27 @@
                     </div>
                     <div class="feature">
                         <i class="fas fa-heart"></i>
-                        <span>改善肌膚</span>
+                        <span>品質保證</span>
                     </div>
                 </div>
                 
-                <div style="margin: 25px 0; color: #666; line-height: 1.7;">
-                    <p>UNICHI膠原蛋白小熊軟糖是澳洲爆款美容營養品，採用天然玫瑰果精華和維生素C配方，每顆軟糖都像美味的小熊糖果，輕鬆補充膠原蛋白，改善皮膚彈性，減少細紋。</p>
-                    <p style="margin-top: 10px;">無人工色素、無防腐劑、無麩質，適合素食者。每天2顆，持續28天，見證肌膚煥新變化。</p>
+                <!-- 產品描述區域 -->
+                <div class="product-description" id="product-description">
+                    <h3>產品介紹</h3>
+                    <p>此產品來自澳洲誠品藥房，是澳洲本地熱銷的優質產品。我們提供正品保障，所有商品均從澳洲直郵，確保您收到的是原裝正品。</p>
+                    
+                    <h3>產品特點</h3>
+                    <ul>
+                        <li>澳洲藥房正品，品質有保障</li>
+                        <li>天然成分，安全可靠</li>
+                        <li>適合全家使用</li>
+                        <li>澳洲本地熱銷產品</li>
+                    </ul>
+                    
+                    <h3>購買說明</h3>
+                    <p>我們提供包郵包稅服務，價格已包含所有運費和關稅。下單後7-15個工作日內送達，全程物流追蹤。</p>
+                    
+                    <p>如需了解更多產品詳情，請添加客服微信或LINE諮詢。</p>
                 </div>
                 
                 <div style="margin: 25px 0;">
@@ -697,6 +738,10 @@
                         <i class="fas fa-shield-alt" style="color: #4ecdc4; margin-right: 10px;"></i>
                         正品保障：提供澳洲本地購買憑證
                     </p>
+                    <p style="margin: 8px 0; color: #555;">
+                        <i class="fas fa-link" style="color: #4ecdc4; margin-right: 10px;"></i>
+                        產品來源：<a href="https://chengpin.com.au/product/608027f4c4546e579f48ed19" target="_blank" style="color: #ff6b8b;">誠品藥房產品頁面</a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -714,13 +759,13 @@
             <div class="contact-box">
                 <h3 style="color: #333; margin-bottom: 15px;">微信（中國用戶）</h3>
                 <div class="contact-id">tonexie1984</div>
-                <p style="color: #666; margin-top: 10px;">添加時請備註"UNICHI小熊軟糖"</p>
+                <p style="color: #666; margin-top: 10px;">添加時請備註"澳洲產品購買"</p>
             </div>
             
             <div class="contact-box">
                 <h3 style="color: #333; margin-bottom: 15px;">LINE（台灣用戶）</h3>
                 <div class="contact-id">tonexie1984</div>
-                <p style="color: #666; margin-top: 10px;">添加後發送"UNICHI"開始諮詢</p>
+                <p style="color: #666; margin-top: 10px;">添加後發送"澳洲產品"開始諮詢</p>
             </div>
             
             <p style="color: #666; font-size: 15px; margin: 30px 0; line-height: 1.6;">
@@ -751,15 +796,53 @@
     </footer>
 
     <script>
-        // 商品數據
-        const product = {
+        // 產品數據配置
+        const productConfig = {
+            // 基本資訊
             id: 1,
-            name: "UNICHI 膠原蛋白小熊軟糖",
-            price_cny: 160.00, // 人民幣價格
-            price_twd: 710,    // 台幣價格 (160 * 4.42≈710)
-            image: "🧸",
-            currency: "cny" // 默認貨幣
+            name: "澳洲優質產品",
+            subtitle: "澳洲藥房正品，品質保證",
+            badge: "澳洲正品直郵",
+            emoji: "🧴",
+            
+            // 價格設定
+            price_cny: 160.00,
+            original_price_cny: 258.00,
+            price_twd: 710,
+            
+            // 產品來源連結
+            source_link: "https://chengpin.com.au/product/608027f4c4546e579f48ed19",
+            
+            // 產品描述
+            description: `
+                <h3>產品介紹</h3>
+                <p>此產品來自澳洲誠品藥房，是澳洲本地熱銷的優質產品。我們提供正品保障，所有商品均從澳洲直郵，確保您收到的是原裝正品。</p>
+                
+                <h3>產品特點</h3>
+                <ul>
+                    <li>澳洲藥房正品，品質有保障</li>
+                    <li>天然成分，安全可靠</li>
+                    <li>適合全家使用</li>
+                    <li>澳洲本地熱銷產品</li>
+                </ul>
+                
+                <h3>購買說明</h3>
+                <p>我們提供包郵包稅服務，價格已包含所有運費和關稅。下單後7-15個工作日內送達，全程物流追蹤。</p>
+                
+                <p>如需了解更多產品詳情，請添加客服微信或LINE諮詢。</p>
+            `
         };
+        
+        // 初始化產品資訊
+        function initProduct() {
+            document.getElementById('product-title').textContent = productConfig.name;
+            document.getElementById('product-subtitle').textContent = productConfig.subtitle;
+            document.getElementById('product-badge').textContent = productConfig.badge;
+            document.getElementById('product-emoji').textContent = productConfig.emoji;
+            document.getElementById('price-cny').innerHTML = `¥${productConfig.price_cny.toFixed(2)} <span id="original-price">¥${productConfig.original_price_cny.toFixed(2)}</span>`;
+            document.getElementById('price-twd-value').textContent = `NT$${productConfig.price_twd}`;
+            document.getElementById('product-description').innerHTML = productConfig.description;
+        }
         
         // 購物車數據
         let cart = [];
@@ -778,6 +861,9 @@
         const notificationEl = document.getElementById('notification');
         const contactModal = document.getElementById('contactModal');
         const priceTwdEl = document.getElementById('price-twd');
+        
+        // 初始化
+        initProduct();
         
         // 切換貨幣顯示
         function toggleCurrency() {
@@ -804,19 +890,23 @@
         
         // 添加到購物車
         function addToCart() {
-            const existingItem = cart.find(item => item.id === product.id);
+            const existingItem = cart.find(item => item.id === productConfig.id);
             
             if (existingItem) {
                 existingItem.quantity += quantity;
             } else {
                 cart.push({
-                    ...product,
+                    id: productConfig.id,
+                    name: productConfig.name,
+                    price_cny: productConfig.price_cny,
+                    price_twd: productConfig.price_twd,
+                    emoji: productConfig.emoji,
                     quantity: quantity
                 });
             }
             
             updateCart();
-            showNotification('已添加 ' + quantity + ' 瓶UNICHI小熊軟糖到購物車');
+            showNotification('已添加 ' + quantity + ' 件商品到購物車');
             quantityEl.value = 1;
             quantity = 1;
         }
@@ -868,14 +958,15 @@
                 // 根據當前貨幣顯示價格
                 const price = currentCurrency === "cny" ? item.price_cny : item.price_twd;
                 const currencySymbol = currentCurrency === "cny" ? "¥" : "NT$";
+                const priceDisplay = currentCurrency === "cny" ? price.toFixed(2) : price;
                 
                 cartItem.innerHTML = `
                     <div class="cart-item-img">
-                        <span>${item.image}</span>
+                        <span>${item.emoji}</span>
                     </div>
                     <div class="cart-item-info">
                         <div class="cart-item-name">${item.name}</div>
-                        <div class="cart-item-price">${currencySymbol}${price.toFixed(currentCurrency === "cny" ? 2 : 0)}</div>
+                        <div class="cart-item-price">${currencySymbol}${priceDisplay}</div>
                         <div class="cart-item-controls">
                             <button class="cart-qty-btn" onclick="updateCartItemQuantity(${item.id}, -1)">-</button>
                             <span class="cart-qty">${item.quantity}</span>
@@ -916,15 +1007,19 @@
         function calculateCartTotal() {
             let subtotal = 0;
             
-            if (currentCurrency === "cny") {
-                subtotal = cart.reduce((sum, item) => sum + (item.price_cny * item.quantity), 0);
-                cartSubtotalEl.textContent = "¥" + subtotal.toFixed(2);
-                cartTotalEl.textContent = "¥" + subtotal.toFixed(2);
-            } else {
-                subtotal = cart.reduce((sum, item) => sum + (item.price_twd * item.quantity), 0);
-                cartSubtotalEl.textContent = "NT$" + subtotal;
-                cartTotalEl.textContent = "NT$" + subtotal;
-            }
+            cart.forEach(item => {
+                if (currentCurrency === "cny") {
+                    subtotal += item.price_cny * item.quantity;
+                } else {
+                    subtotal += item.price_twd * item.quantity;
+                }
+            });
+            
+            const currencySymbol = currentCurrency === "cny" ? "¥" : "NT$";
+            const subtotalDisplay = currentCurrency === "cny" ? subtotal.toFixed(2) : subtotal;
+            
+            cartSubtotalEl.textContent = `${currencySymbol}${subtotalDisplay}`;
+            cartTotalEl.textContent = `${currencySymbol}${subtotalDisplay}`;
         }
         
         // 結算
@@ -934,8 +1029,8 @@
                 return;
             }
             
-            contactModal.style.display = 'flex';
             closeCart();
+            contactModal.style.display = 'flex';
         }
         
         // 顯示通知
@@ -947,20 +1042,55 @@
                 notificationEl.style.animation = 'slideOut 0.4s ease';
                 setTimeout(() => {
                     notificationEl.style.display = 'none';
-                    notificationEl.style.animation = 'slideIn 0.4s ease';
+                    notificationEl.style.animation = '';
                 }, 400);
-            }, 3000);
+            }, 2000);
         }
         
-        // 關閉模態框
+        // 關閉模態窗口
         function closeModal() {
             contactModal.style.display = 'none';
         }
         
-        // 初始化
-        document.addEventListener('DOMContentLoaded', function() {
+        // 點擊模態窗口外部關閉
+        window.onclick = function(event) {
+            if (event.target === contactModal) {
+                closeModal();
+            }
+            if (event.target === overlay) {
+                closeCart();
+            }
+        }
+        
+        // 未來更換產品時使用的函數
+        function updateProduct(newProductConfig) {
+            // 更新產品配置
+            Object.assign(productConfig, newProductConfig);
+            
+            // 重新初始化產品顯示
+            initProduct();
+            
+            // 清空購物車（因為產品已變更）
+            cart = [];
             updateCart();
-        });
+            
+            showNotification('產品資訊已更新');
+        }
+        
+        // 示例：如何更換產品
+        /*
+        const newProduct = {
+            name: "新產品名稱",
+            subtitle: "新產品副標題",
+            badge: "新標籤",
+            emoji: "🆕",
+            price_cny: 199.00,
+            original_price_cny: 299.00,
+            price_twd: 880,
+            description: "新產品描述..."
+        };
+        updateProduct(newProduct);
+        */
     </script>
 </body>
 </html>
