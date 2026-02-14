@@ -1,0 +1,235 @@
+<!-- 主要内容 -->
+<div class="container">
+    <!-- 产品展示卡片 -->
+    <div class="product-card">
+        <div class="product-image">
+            <div class="product-emoji">🧸</div>
+        </div>
+        
+        <div class="product-info">
+            <div class="product-badge">澳洲正品直邮</div>
+            <h1 class="product-title">UNICHI 胶原蛋白小熊软糖</h1>
+            <p class="product-subtitle">玫瑰果精华+维生素C，美味又美容，每瓶60粒</p>
+            
+            <div class="price">$28.90 <span>$35.00</span></div>
+            
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>澳洲药房正品</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-shipping-fast"></i>
+                    <span>直邮中国包税</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-leaf"></i>
+                    <span>天然成分</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-heart"></i>
+                    <span>改善肌肤</span>
+                </div>
+            </div>
+            
+            <div style="margin: 25px 0; color: #666; line-height: 1.7;">
+                <p>UNICHI胶原蛋白小熊软糖是澳洲爆款美容营养品，采用天然玫瑰果精华和维生素C配方，每颗软糖都像美味的小熊糖果，轻松补充胶原蛋白，改善皮肤弹性，减少细纹。</p>
+                <p style="margin-top: 10px;">无人工色素、无防腐剂、无麸质，适合素食者。每天2颗，持续28天，见证肌肤焕新变化。</p>
+            </div>
+            
+            <!-- 购买部分 -->
+            <div class="purchase-section">
+                <div style="margin-bottom: 15px; font-weight: 600;">购买数量：</div>
+                <div class="quantity-control">
+                    <button class="qty-btn" onclick="changeQuantity(-1)">-</button>
+                    <input type="number" id="quantity" value="1" min="1" readonly>
+                    <button class="qty-btn" onclick="changeQuantity(1)">+</button>
+                </div>
+                
+                <div class="action-buttons">
+                    <button class="btn btn-primary" onclick="addToCart()">
+                        <i class="fas fa-cart-plus"></i> 加入购物车
+                    </button>
+                    <button class="btn btn-secondary" onclick="buyNow()">
+                        <i class="fas fa-bolt"></i> 立即购买
+                    </button>
+                </div>
+            </div>
+            
+            <!-- 配送信息 -->
+            <div style="background: #f8f9fa; padding: 20px; border-radius: 12px; margin-top: 25px;">
+                <p style="margin: 8px 0; color: #555;">
+                    <i class="fas fa-info-circle" style="color: #4ecdc4; margin-right: 10px;"></i>
+                    预计送达：澳洲直邮，7-15个工作日内送达
+                </p>
+                <p style="margin: 8px 0; color: #555;">
+                    <i class="fas fa-shield-alt" style="color: #4ecdc4; margin-right: 10px;"></i>
+                    正品保障：提供澳洲本地购买凭证
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 产品详情 -->
+    <div class="details-section">
+        <h2 class="details-title">产品详细信息</h2>
+        
+        <div class="details-grid">
+            <div class="detail-column">
+                <h3>主要功效</h3>
+                <ul>
+                    <li>促进胶原蛋白生成，增强皮肤弹性</li>
+                    <li>减少细纹和皱纹，改善肌肤质地</li>
+                    <li>富含维生素C，提亮肤色抗氧化</li>
+                    <li>玫瑰果精华，天然滋养肌肤</li>
+                    <li>改善头发和指甲健康</li>
+                </ul>
+            </div>
+            
+            <div class="detail-column">
+                <h3>成分说明</h3>
+                <ul>
+                    <li>胶原蛋白肽（海洋来源）</li>
+                    <li>天然玫瑰果提取物</li>
+                    <li>维生素C（抗坏血酸）</li>
+                    <li>天然水果提取物（调味）</li>
+                    <li>无人工色素、无防腐剂</li>
+                </ul>
+            </div>
+            
+            <div class="detail-column">
+                <h3>食用方法</h3>
+                <ul>
+                    <li>成人每日2颗，随餐或餐后食用</li>
+                    <li>可直接咀嚼，口感酸甜可口</li>
+                    <li>建议连续食用28天以上效果更佳</li>
+                    <li>存放于阴凉干燥处，避免阳光直射</li>
+                    <li>置于儿童无法触及的地方</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 联系方式弹窗 -->
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+        <div style="font-size: 60px; color: #4ecdc4; margin-bottom: 20px;">
+            <i class="fas fa-comment-dots"></i>
+        </div>
+        
+        <h2 style="color: #333; margin-bottom: 10px;">联系客服购买</h2>
+        <p style="color: #666; margin-bottom: 30px;">请添加以下联系方式，客服将为您处理订单</p>
+        
+        <div class="contact-box">
+            <div class="contact-title">微信（中国大陆用户）</div>
+            <div class="contact-id">tonexie1984</div>
+            <p style="color: #666; margin-top: 10px;">添加时请备注"UNICHI小熊软糖"</p>
+        </div>
+        
+        <div class="contact-box">
+            <div class="contact-title">LINE（台湾用户）</div>
+            <div class="contact-id">tonexie1984</div>
+            <p style="color: #666; margin-top: 10px;">添加后发送"UNICHI"开始咨询</p>
+        </div>
+        
+        <p style="color: #666; font-size: 15px; margin: 30px 0; line-height: 1.6;">
+            添加客服后，请发送您的购买数量，客服将为您确认订单详情、安排发货并指导支付。
+        </p>
+        
+        <button class="btn btn-secondary" onclick="closeModal()" style="width: 100%; padding: 18px; font-size: 16px;">
+            <i class="fas fa-times"></i> 关闭窗口
+        </button>
+    </div>
+</div>
+
+<!-- 通知提示 -->
+<div id="notification" class="notification"></div>
+
+<!-- 页脚 -->
+<footer>
+    <div class="container">
+        <p style="font-size: 16px; margin-bottom: 10px; font-weight: 600;">澳优选澳洲正品代购</p>
+        <p style="color: #888; font-size: 14px; margin: 5px 0;">专业澳洲直邮，正品保障</p>
+        <p style="color: #aaa; font-size: 13px; margin-top: 15px;">服务时间：周一至周五 9:00-18:00（澳洲时间）</p>
+        
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-weixin"></i></a>
+            <a href="#"><i class="fab fa-line"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // 全局变量
+    let cartQuantity = 0;
+    
+    // 修改数量
+    function changeQuantity(amount) {
+        const input = document.getElementById('quantity');
+        let value = parseInt(input.value) + amount;
+        if (value < 1) value = 1;
+        input.value = value;
+    }
+    
+    // 添加到购物车
+    function addToCart() {
+        const quantity = parseInt(document.getElementById('quantity').value);
+        cartQuantity += quantity;
+        showNotification(`已添加 ${quantity} 瓶UNICHI小熊软糖到购物车`);
+    }
+    
+    // 立即购买
+    function buyNow() {
+        const quantity = parseInt(document.getElementById('quantity').value);
+        cartQuantity += quantity;
+        showNotification(`准备购买 ${quantity} 瓶UNICHI小熊软糖`);
+        setTimeout(() => {
+            showContactModal();
+        }, 1000);
+    }
+    
+    // 显示联系方式弹窗
+    function showContactModal() {
+        document.getElementById('contactModal').style.display = 'flex';
+    }
+    
+    // 关闭弹窗
+    function closeModal() {
+        document.getElementById('contactModal').style.display = 'none';
+    }
+    
+    // 显示通知
+    function showNotification(message) {
+        const notification = document.getElementById('notification');
+        notification.textContent = message;
+        notification.style.display = 'block';
+        notification.style.animation = 'slideIn 0.4s ease';
+        
+        setTimeout(() => {
+            notification.style.animation = 'slideOut 0.4s ease';
+            setTimeout(() => {
+                notification.style.display = 'none';
+            }, 400);
+        }, 3000);
+    }
+    
+    // 点击模态框外部关闭
+    document.getElementById('contactModal').addEventListener('click', function(e) {
+        if (e.target === this) {
+            closeModal();
+        }
+    });
+    
+    // 防止数量输入框被直接修改
+    document.getElementById('quantity').addEventListener('change', function() {
+        if (this.value < 1) this.value = 1;
+    });
+    
+    // 初始化页面
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('UNICHI产品页面加载完成！');
+    });
+</script>
